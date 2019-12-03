@@ -1,0 +1,18 @@
+server:
+  port: 8701
+
+spring:
+  application:
+    name: nacos-client
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: 0df79d5a-2432-4840-a254-e946a943a6c9
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
